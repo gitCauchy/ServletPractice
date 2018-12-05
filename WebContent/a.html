@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+测试请求参数：
+<a href="/servletPractice/HttpServletTestS?xxx=XXX&yyy=YYY">点击测试</a>
+<br/>
+<form action="/servletPractice/HttpServletTestS" method = "post">
+	用户名：<input type = "text" name = "username" /><br/>
+	密    码：<input type = "password" name = "password"/><br/>
+	测    试：<input type = "checkbox" name = "test"/ value = "t1">test1
+	<input type = "checkbox" name = "test" value = "t2"/>test2
+	<input type = "checkbox" name = "test" value = "t3"/>test3
+	<br>
+	<input type = "submit" value = "提交"/>
+</form>
+</body>
+</html>
