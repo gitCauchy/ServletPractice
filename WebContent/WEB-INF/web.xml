@@ -1,20 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-	<display-name>servletPractice</display-name>
+  <display-name>servletPractice</display-name>
+  <servlet>
+    <servlet-name>servletTestA</servlet-name>
+    <servlet-class>com.cauchy.web.servlet.AServlet</servlet-class>
+    <init-param>
+      <param-name>p1</param-name>
+      <param-value>v1</param-value>
+    </init-param>
+    <init-param>
+      <param-name>p2</param-name>
+      <param-value>v2</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletTestA</servlet-name>
+    <url-pattern>/servletTestA</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HttpServletTestE</servlet-name>
+    <servlet-class>com.cauchy.web.servlet.EServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HttpServletTestE</servlet-name>
+    <url-pattern>/HttpServletTestE</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>HttpServletTestF</servlet-name>
+    <servlet-class>com.cauchy.web.servlet.FServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HttpServletTestF</servlet-name>
+    <url-pattern>/HttpServletTestF</url-pattern>
+  </servlet-mapping>
+
 	<servlet>
-		<servlet-name>servletTest</servlet-name>
-		<servlet-class>com.cauchy.web.servlet.AServlet</servlet-class>
-		<init-param>
-			<param-name>p1</param-name>
-			<param-value>v1</param-value>
-		</init-param>
-		<init-param>
-			<param-name>p2</param-name>
-			<param-value>v2</param-value>
-		</init-param>
+		<servlet-name>HttpServletTestG</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.GServlet</servlet-class>
 	</servlet>
-	<servlet-mapping>
-		<servlet-name>servletTest</servlet-name>
-		<url-pattern>/servletTest</url-pattern>
-	</servlet-mapping>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestG</servlet-name>
+    	<url-pattern>/HttpServletTestG</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+		<servlet-name>HttpServletTestI</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.IServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestI</servlet-name>
+    	<url-pattern>/HttpServletTestI</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+		<servlet-name>HttpServletTestH</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.HServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestH</servlet-name>
+    	<url-pattern>/HttpServletTestH</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+		<servlet-name>HttpServletTestJ</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.JServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestJ</servlet-name>
+    	<url-pattern>/HttpServletTestJ</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+		<servlet-name>HttpServletTestK</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.KServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestK</servlet-name>
+    	<url-pattern>/HttpServletTestK</url-pattern>
+  	</servlet-mapping>
+  <context-param>
+  	<param-name>context-param</param-name>
+  	<param-value>context-value</param-value>
+  </context-param>
 </web-app>
