@@ -7,12 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class UServlet extends HttpServlet{
+public class WServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException,IOException{
-		System.out.println("Hello Uservlet.......");
-		request.getAttribute("aaa");
-		response.getWriter().print("Hello UServlet.....");
+		System.out.println("Hello Wservlet.......");
+		response.getWriter().print("Hello WServlet.....");
 	}
-
 }

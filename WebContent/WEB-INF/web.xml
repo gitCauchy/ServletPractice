@@ -155,6 +155,30 @@
     	<servlet-name>HttpServletTestU</servlet-name>
     	<url-pattern>/HttpServletTestU</url-pattern>
   	</servlet-mapping>
+  	<servlet>
+		<servlet-name>HttpServletTestV</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.VServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestV</servlet-name>
+    	<url-pattern>/HttpServletTestV</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+		<servlet-name>HttpServletTestW</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.WServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestW</servlet-name>
+    	<url-pattern>/HttpServletTestW</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+		<servlet-name>HttpServletTestX</servlet-name>
+    	<servlet-class>com.cauchy.web.servlet.XServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>HttpServletTestX</servlet-name>
+    	<url-pattern>/HttpServletTestX</url-pattern>
+  	</servlet-mapping>
   <context-param>
   	<param-name>context-param</param-name>
   	<param-value>context-value</param-value>
